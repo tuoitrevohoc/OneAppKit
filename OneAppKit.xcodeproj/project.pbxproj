@@ -9,7 +9,12 @@
 /* Begin PBXBuildFile section */
 		36BA5CAB22C5DE180005BC6B /* OneAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BA5CA122C5DE180005BC6B /* OneAppKit.framework */; };
 		36BA5CB022C5DE180005BC6B /* OneAppKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BA5CAF22C5DE180005BC6B /* OneAppKitTests.swift */; };
-		36BA5CB222C5DE180005BC6B /* OneAppKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 36BA5CA422C5DE180005BC6B /* OneAppKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36BA5CC322C5DE4F0005BC6B /* AppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BA5CBC22C5DE4F0005BC6B /* AppIcon.swift */; };
+		36BA5CC422C5DE4F0005BC6B /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BA5CBD22C5DE4F0005BC6B /* AppView.swift */; };
+		36BA5CC522C5DE4F0005BC6B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BA5CBF22C5DE4F0005BC6B /* User.swift */; };
+		36BA5CC622C5DE4F0005BC6B /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BA5CC022C5DE4F0005BC6B /* Context.swift */; };
+		36BA5CC722C5DE4F0005BC6B /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BA5CC122C5DE4F0005BC6B /* App.swift */; };
+		36BA5CC822C5DE4F0005BC6B /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36BA5CC222C5DE4F0005BC6B /* Icons.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +29,16 @@
 
 /* Begin PBXFileReference section */
 		36BA5CA122C5DE180005BC6B /* OneAppKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OneAppKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		36BA5CA422C5DE180005BC6B /* OneAppKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneAppKit.h; sourceTree = "<group>"; };
 		36BA5CA522C5DE180005BC6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36BA5CAA22C5DE180005BC6B /* OneAppKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneAppKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36BA5CAF22C5DE180005BC6B /* OneAppKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneAppKitTests.swift; sourceTree = "<group>"; };
 		36BA5CB122C5DE180005BC6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36BA5CBC22C5DE4F0005BC6B /* AppIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppIcon.swift; sourceTree = "<group>"; };
+		36BA5CBD22C5DE4F0005BC6B /* AppView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		36BA5CBF22C5DE4F0005BC6B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		36BA5CC022C5DE4F0005BC6B /* Context.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
+		36BA5CC122C5DE4F0005BC6B /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		36BA5CC222C5DE4F0005BC6B /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +81,8 @@
 		36BA5CA322C5DE180005BC6B /* OneAppKit */ = {
 			isa = PBXGroup;
 			children = (
-				36BA5CA422C5DE180005BC6B /* OneAppKit.h */,
+				36BA5CBB22C5DE4F0005BC6B /* Application */,
+				36BA5CC222C5DE4F0005BC6B /* Icons.xcassets */,
 				36BA5CA522C5DE180005BC6B /* Info.plist */,
 			);
 			path = OneAppKit;
@@ -86,6 +97,26 @@
 			path = OneAppKitTests;
 			sourceTree = "<group>";
 		};
+		36BA5CBB22C5DE4F0005BC6B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				36BA5CBE22C5DE4F0005BC6B /* Model */,
+				36BA5CC122C5DE4F0005BC6B /* App.swift */,
+				36BA5CBC22C5DE4F0005BC6B /* AppIcon.swift */,
+				36BA5CBD22C5DE4F0005BC6B /* AppView.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		36BA5CBE22C5DE4F0005BC6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				36BA5CBF22C5DE4F0005BC6B /* User.swift */,
+				36BA5CC022C5DE4F0005BC6B /* Context.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -93,7 +124,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36BA5CB222C5DE180005BC6B /* OneAppKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36BA5CC822C5DE4F0005BC6B /* Icons.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +226,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36BA5CC422C5DE4F0005BC6B /* AppView.swift in Sources */,
+				36BA5CC622C5DE4F0005BC6B /* Context.swift in Sources */,
+				36BA5CC722C5DE4F0005BC6B /* App.swift in Sources */,
+				36BA5CC322C5DE4F0005BC6B /* AppIcon.swift in Sources */,
+				36BA5CC522C5DE4F0005BC6B /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +422,7 @@
 		36BA5CB922C5DE180005BC6B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OneAppKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,6 +440,7 @@
 		36BA5CBA22C5DE180005BC6B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OneAppKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
